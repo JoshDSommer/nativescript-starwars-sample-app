@@ -1,0 +1,28 @@
+.image{
+	width: 100%;
+}
+.name-wrap{
+	padding: 20 25;
+	background-color: #fff;
+	opacity: 0.65;
+	width: 100%;
+}
+.person-info{
+	margin: 0 25;
+}
+.name-text, .person-info{
+	font-family: 'SF Distant Galaxy';
+	font-size: 25;
+}
+.info{
+	font-family: 'SF Distant Galaxy';
+	font-size: 25;
+	horizontal-align:left;
+	margin: 15 25;
+}
+.background-circle{
+	width: 66;
+	height: 66;
+	border-radius: 33;
+	margin-bottom: -132;
+}

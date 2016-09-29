@@ -1,0 +1,10 @@
+<StackLayout>
+    <Image src="~/images/sw-title.png" stretch="aspectFit"></Image>
+    <ListView [items]="dataItems" (setupItemView)="onSetupItemView($event)" rowHeight="44">
+        <template let-dataitem="item" let-i="index" let-third="third" let-header="header" let-footer="footer">
+            <GridLayout [nsRouterLink]="['/details', dataitem.name]" (tap)="selectedPerson.setPerson(dataitem)" pageTransition="flip" [class.third]="third" [class.header]="header" [class.footer]="footer" class="item" height="50" ios:padding="15" >
+                <Label [text]="dataitem.name" class="label-item"></Label>
+            </GridLayout>
+        </template>
+    </ListView>
+</StackLayout>

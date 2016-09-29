@@ -1,0 +1,14 @@
+<DockLayout stretchLastChild="false">
+	<Label dock="bottom" text="" class="background-circle" #backgroundFade ></Label>
+	<AbsoluteLayout dock="top">
+		<Image top="0" left="0" [src]="imageSrc" class="image" #image></Image>
+		<StackLayout top="0" left="0"  class="name-wrap">
+			<Label [text]="(person$ | async)?.name" class="name-text"></Label>
+		</StackLayout>
+	</AbsoluteLayout>
+	<StackLayout>
+	<Label text="Info:" textWrap="true" class="info"></Label>
+	<Label [text]="(person$ | async)?.gender + '  ' + (person$ | async)?.birth_year" class="person-info"></Label>
+	</StackLayout>
+
+</DockLayout>
